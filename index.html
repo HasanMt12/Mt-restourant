@@ -1,12 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Mt Lattetude</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="common-style.css">
+<link rel="stylesheet" href="carousel-style.css">
+ <!-- Font Awsome link -->
+    <script src="https://kit.fontawesome.com/00c39e9316.js" crossorigin="anonymous"></script>
+    
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+.menu-background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 700px;
+   
+  background-image: url("images/bak2.png"); 
+  
+}
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/photo-1517248135467-4c7edcad34c4.jfif");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+
 </head>
 <body>
+
+<!-- Links (sit on top) -->
+<div class="top">
+  <div class="row padding black">
+    <div class="col menubar">
+      <img src="images/rsz_logo2-removebg-preview (2).png" alt="">
+    </div>
+    <div class="col menubar">
+      <a href="#" class="button block black">HOME</a>
+    </div>
+    <div class="col menubar">
+      <a href="#about" class="button block black">ABOUT</a>
+    </div>
+    <div class="col menubar">
+      <a href="#menu" class="button block black ">MENU</a>
+    </div>
+    <div class="col menubar">
+      <a href="" class="button block black ">FEEDBACK</a>
+    </div>
+    <div class="col menubar">
+      <a href="" class="button block black ">ORDER</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg display-container grayscale-min" id="home">
+  <div class="display-bottomleft center padding-large hide-small">
+    <span class="tag">Open from <i class="fa fa-clock-o" aria-hidden="true"></i> 10am to <i class="fa fa-clock-o" aria-hidden="true"></i> 8pm</span>
+  </div>
+  <div class="display-middle center">
+    <span class="text-header-color" style="font-size:90px">Mt<br>Lattetude</span>
+  </div>
+  <!-- <div class="display-bottomright center padding-large">
+    <span class="text-white">15 Adr street, 5015</span>
+  </div> -->
+</header>
+<div class="container-carousel">
+<h5 class="center padding-64"><span class="tag wide">Our Food gallery/ছবি সমূহ</span></h5>
+ <div class="carousel-container">
+  <div class="carousel-card" id="far-left">
+    <img class="carousel-icon" src="images/carousel.png" alt="">
+    <img class="carousel-food" src="images/food5.jpg" alt="">
+  </div>
+ 
+  <div class="carousel-card" id="center">
+    <img class="carousel-icon" src="images/carousel.png" alt="">
+    <img class="carousel-food" src="images/food6.jpg" alt="">
+  </div>
+
+  <div class="carousel-card" id="far-right">
+    <img class="carousel-icon" src="images/carousel.png" alt="">
+    <img class="carousel-food" src="images/food7.jpg" alt="">
+  </div>
+</div>
+</div>
+
+<!-- About Container -->
+<div class="container" id="about">
+  <div class="content" style="max-width:700px">
+    <h5 class="center padding-64"><span class="tag wide">ABOUT THE CAFE</span></h5>
+    <p>"Mt Lattetude opened on Thanksgiving Day 2014. Chef / Owner Hasan Mahmud began baking pies and selling them to restaurants and his "</p>
+    <p>"neighbors out of a small kitchen at the corner of Azimpur Dhak. Today, NYC’s beloved restaurant  celebrates 7 years of classic made from scratch American and BAngladesh cooking."</p>
+    <div class="panel leftbar light-grey">
+      <p><i> ”Served every day since 2014” Fresh and healthy food serve.</i></p>
+      <p>Chef : Tanvir,  Owner: Hasan (হাসান)</p>
+    </div>
+    <img src="images/restuarant2.jpg" style="width:100%;max-width:1000px" class="margin-top">
+    <!-- <p><strong>Opening hours:</strong> everyday from 10Am to 5pm.</p> -->
+    <p><strong>Address:</strong> Azimpur, Dhaka</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="container " id="menu">
+  <div class="content " style="max-width:700px">
+ 
+    <h5 class="center padding-48 "><span class="tag wide">THE MENU/তালিকা</span></h5>
+  
+    <div class="row center menu-box card padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="col s6  tablink">Eat/খাবার</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="col s6  tablink">Drink/পানীয়</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="container menu-background menu-box menu padding-48 card " >
+      <h5 class="text-menu-color ">Beef</h5>
+      <p class="text-grey">Buffalo Wings or Tenders - 1120 Taka/$9.95</p><br>
     
+      <h5 class="text-menu-color ">Salad mix</h5>
+      <p class="text-grey">Caesar Selections: Plain - 850Taka/$8.95, With Chicken - 1000Taka/$9.95, With Shrimp - 1210Taka/$11.95</p><br>
+
+      <h5 class="text-menu-color ">Deshi Food/বাঙ্গালিয়ানা খাবার</h5>
+      <p class="text-grey">ভাত/ 3item ভরতা,  মাছ, ডাল</p><br>
+    
+      <h5 class="text-menu-color ">Specialty Sandwiches</h5>
+      <p class="text-grey">Tuscan Grilled Chicken Panini- Grilled chicken with provolone, artichoke hearts, and roasted red pesto on grilled rosemary focaccia. $9.95</p><br>
+    
+      <h5 class="text-menu-color ">Sea Food</h5>
+      <p class="text-grey">Lobster Roll - A Maine favorite. Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll. Market Price</p>
+    
+      
+    </div>
+
+    <div id="Drinks" class="container menu menu-background padding-48 card">
+      <h5 class="text-menu-color ">Cold Drinks/hot drinks</h5>
+      <p class="text-grey">Regular Tea 2.50</p><br>
+    
+      <h5 class="text-menu-color ">Tea/চা </h5>
+      <p class="text-grey"> দুধ চা/Hot MIlk Tea 4.50</p><br>
+    
+      <h5 class="text-menu-color ">Coffee</h5>
+      <p class="text-grey">chocholate milk coffee 5.00</p><br>
+    
+      <h5 class="text-menu-color ">ঝাল চা/Spicy tea</h5>
+      <p class="text-grey">Hot tea, extrak chili 3.00</p><br>
+    
+      <h5 class="text-menu-color ">bevarege</h5>
+      <p class="text-grey">Coke, Sprite, Fanta, etc. </p>
+      <img src="images/back.png" alt="">
+    </div>  
+  </div>
+</div>
+<br>
+<!-- Contact/Area Container -->
+<div class="container" id="where" style="padding-bottom:32px;">
+  <div class="content" style="max-width:700px">
+   
+    <p><span class="tag">For your order/feedbak</span> <br> <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit libero nobis quisquam minima corporis minus soluta labore quidem officiis, error nulla totam rem deleniti, consequuntur eveniet blanditiis!:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="input padding-10 border radius-form" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="input padding-10 border radius-form" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="input padding-10 border radius-form" type="datetime-local" placeholder="Date and time" required name="date" value="_ _ _ _"></p>
+      <p><input class="input padding-10 border radius-form" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="button post-color radius-form" type="submit">Post</button></p>
+    </form><br>
+    <div>
+     <h5 class="center padding-48"><span class="tag wide"> ঠিকানা </span></h5>
+    <p>খুজে পাবেন যেখানে।</p>
+    <img src="images/map.PNG" class="image" style="width:100%">
+</div>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="center light-grey padding-48 large">
+    <a href="#home" class="button post-color "><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+    <div class="xlarge section">
+    <i class="fa fa-facebook-official "></i>
+    <i class="fa fa-instagram "></i>
+    <i class="fa fa-snapchat "></i>
+    </div>
+
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+ <script src="carousel.js"></script>
+
 </body>
 </html>
